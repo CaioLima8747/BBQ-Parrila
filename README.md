@@ -1,37 +1,78 @@
-# BBQ Parrila - Versão Vanilla
+# BBQ Parrila 🍔🔥
 
-Projeto convertido de React/TypeScript para HTML, CSS e JavaScript puro.
+Sistema de delivery desenvolvido em HTML, CSS, JavaScript e Firebase.
 
-## Como abrir
-Abra o arquivo `index.html` no navegador ou use Live Server no VS Code/Firebase Studio.
+## Sobre o projeto
 
-## O que tem
-- Home/cardápio com categorias
-- Carrinho lateral
-- Login/cadastro simulado com perfis: cliente, gerente e cozinha
-- Checkout
-- Acompanhamento de pedido
-- Dashboard gerencial
-- Painel da cozinha
-- Dados salvos em localStorage
+O BBQ Parrila é uma aplicação web de delivery que permite ao cliente realizar pedidos online, acompanhar o status em tempo real e consultar o histórico de compras.
 
-## Observação
-Ainda não há Firebase integrado. A estrutura foi deixada limpa para conectar Firebase depois.
+O sistema possui diferentes perfis de acesso:
 
+* Cliente
+* Cozinha
+* Gerente
 
-## Organização dos arquivos JavaScript
+## Funcionalidades
 
-O JavaScript foi separado em arquivos menores para facilitar a apresentação e manutenção:
+### Cliente
 
-- `utilitarios.js`: funções auxiliares, localStorage, dinheiro, status e mensagens visuais.
-- `dados.js`: cardápio inicial, categorias e estado global.
-- `carrinho.js`: carrinho, subtotal, total e checkout.
-- `autenticacao.js`: login, cadastro e logout.
-- `pedidos.js`: criação, atualização, entrega, atraso e Pix.
-- `cardapio.js`: filtro de categorias e CRUD de produtos.
-- `cozinha.js`: tela da cozinha.
-- `visualizacoes.js`: telas gerais do cliente.
-- `dashboard.js`: dashboard, detalhes do pedido e tela de gerenciamento do cardápio.
-- `app.js`: renderização principal e conexão das funções com os botões do HTML.
+* Cadastro e login
+* Cardápio online
+* Carrinho de compras
+* Checkout
+* Acompanhamento do pedido em tempo real
+* Histórico de pedidos
+* Perfil do usuário
 
-O arquivo `app-original.js` foi mantido como backup do JavaScript original em arquivo único.
+### Cozinha
+
+* Visualização dos pedidos recebidos
+* Atualização do status dos pedidos
+* Visualização de observações do cliente
+
+### Gerente
+
+* Dashboard administrativo
+* Controle de pedidos
+* Estatísticas e relatórios
+* Gerenciamento do cardápio
+
+## Tecnologias utilizadas
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* Firebase Authentication
+* Firebase Realtime Database
+* Firebase Hosting
+
+## Estrutura do projeto
+
+```txt
+bbq-parrila/
+├── assets/
+├── css/
+├── js/
+├── index.html
+├── firebase.json
+└── README.md
+```
+
+## Banco de dados
+
+O sistema utiliza Firebase Realtime Database para armazenar:
+
+* Usuários
+* Pedidos
+* Histórico de pedidos
+* Cardápio
+
+## Hospedagem
+
+O projeto está hospedado utilizando Firebase Hosting.
+
+## Autor
+
+Caio Lima de Godói
+
+Projeto desenvolvido para fins acadêmicos no curso de Ciência da Computação.
